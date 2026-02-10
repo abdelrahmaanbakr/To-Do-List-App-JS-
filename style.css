@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  color: white;
+}
+
+.container {
+  width: 400px;
+  background-color: #2c2c3e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b3b5c;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.task-item button {
+  background-color: white;
+  margin-left: 10px;
+}
+
+.task-item button:hover {
+  background-color: #cc0000;
+}
